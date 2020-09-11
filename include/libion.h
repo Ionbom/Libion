@@ -10,7 +10,10 @@
 void putstr_ion(char *input);
 // Outputs a single character.
 void putchar_ion(char c);
-// outputs an integer to the terminal.
+// Outputs an integer to the terminal.
 void putnbr_ion(int nb);
+// Returns the length of a given character array.
+int strlen_ion(char *str);
+
 
 #endif

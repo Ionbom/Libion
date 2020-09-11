@@ -2,6 +2,6 @@
 
 int main()
 {
-    print_ion("Hello World!\n");
+    putstr_ion("Hello World!\n");
     return 0;
 }

@@ -1,5 +1,6 @@
-#include <unistd.h>
+#include <libion.h>
 
+// This function counts how many characters are in a character array, then prints that many.
 void print_ion(char *input)
 {
     int i;

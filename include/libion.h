@@ -17,6 +17,8 @@ int strlen_ion(char *str);
 // This function reverses the order of characters in a string.
 // CURRENTLY MAYBE BROKEN, OUTPUTS EXTRA UNDEFINED CHARACTERS?
 char *strrev_ion(char *str);
+// This string function takes a source, and copies to destination.
+char *strcpy_ion(char *dest, char *str);
 // This function takes a character array and outputs an integer
 // // If value is out of bounds of integer type, will overflow.
 int atoi_ion(char *str);

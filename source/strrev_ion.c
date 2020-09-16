@@ -7,6 +7,25 @@
 
 char *strrev_ion(char *str)
 {
+    char rev[256];
+    int i;
+    int j;
+
+    i = 0;
+    j = strlen_ion(str);
+    while(j > 0)
+    {
+        rev[i] = str[j];
+        i++;
+        j--;
+    }
+    strcpy_ion(str, rev);
+    return str;
+}
+
+/*
+char *strrev_ion(char *str)
+{
     int i;
     int j;
     char tmp[200];
@@ -19,7 +38,7 @@ char *strrev_ion(char *str)
         i--;
         j++;
     }
-    str = tmp; // NEEDS STRCPY, changes str adress to tmp, which is unterminated.
+    str = tmp+1; // NEEDS STRCPY, changes str adress to tmp, which is unterminated.
     //strcpy_ion(str, tmp); doesn't work, still odd characters?
     return str;
-}
+}*/

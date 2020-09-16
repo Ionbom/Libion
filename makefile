@@ -3,21 +3,31 @@ CFLAGS=-Wall -Wextra -Werror
 INCLUDES=-Iinclude
 TARGET=helloWorld
 
-SRCS=$(wildcard *.c) $(wildcard */*.c)
+SRCS=$(wildcard *.c) $(wildcard source/*.c)
 OBJS=$(SRCS:.c=.o)
 
 all: $(TARGET)
-.PHONY: clean fclean re itwork
+.PHONY: test cleantest fcleantest clean fclean re itwork
 
 $(TARGET): $(OBJS)
 	@echo "Making $@" && $(CC) $(CFLAGS) $(INCLUDES) -o $@ $(OBJS)
 
 %.o: %.c
 	@echo "Compiling $<:" && $(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
-clean:
+
+test:
+	make -C ./tests && make -C ./tests clean && make clean
+
+cleantest:
+	make -C ./tests clean
+
+fcleantest:
+	make -C ./tests fclean
+
+clean: cleantest
 	@echo "Cleaning all .o files." && rm -rf *.o */*.o
 
-fclean: clean
+fclean: clean fcleantest
 	@echo "Removing $(TARGET) and a.out." && rm -rf $(TARGET) a.out
 
 re: fclean all

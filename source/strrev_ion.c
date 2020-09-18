@@ -3,9 +3,9 @@
 // This function reverses the order of characters in a string.
 char *strrev_ion(char *str)
 {
-    int i;
-    int j;
-    char tmp[200];
+    int     i;
+    int     j;
+    char    tmp[200];
 
     i = strlen_ion(str) - 1;
     j = 0;

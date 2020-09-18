@@ -3,7 +3,7 @@
 // Unit test for putchar_ion.
 int main()
 {
-    char c;
+    char    c;
 
     c = 'A';
     putstr_ion("Testing putchar_ion: ");

@@ -3,7 +3,7 @@
 // Unit test for strlen_ion.
 int main()
 {
-    char str[] = {"Success."};
+    char    str[] = {"Success."};
 
     putstr_ion("Testing strlen_ion with ");
     putstr_ion(str);

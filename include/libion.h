@@ -15,12 +15,13 @@ void putnbr_ion(int nb);
 // Returns the length of a given character array.
 int strlen_ion(char *str);
 // This function reverses the order of characters in a string.
-// CURRENTLY MAYBE BROKEN, OUTPUTS EXTRA UNDEFINED CHARACTERS?
 char *strrev_ion(char *str);
 // This string function takes a source, and copies to destination.
 char *strcpy_ion(char *dest, char *str);
 // This function takes a character array and outputs an integer
 // // If value is out of bounds of integer type, will overflow.
 int atoi_ion(char *str);
+// This function takes an integer and outputs a string.
+char *itoa_ion(int i, char *str);
 
 #endif

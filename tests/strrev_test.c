@@ -3,7 +3,7 @@
 // Unit test for strrev_ion.
 int main()
 {
-    char str[] = "This is a test.";
+    char    str[] = "This is a test.";
 
     putstr_ion("Testing putstr_ion with \"");
     putstr_ion(str);

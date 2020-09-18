@@ -16,7 +16,7 @@ $(TARGET): $(OBJS)
 	@echo "Compiling $<:" && $(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 test:
-	make -C ./tests && make -C ./tests clean && make clean
+	make -C ./tests && make -C ./tests clean
 
 cleantest:
 	make -C ./tests clean

@@ -3,8 +3,8 @@
 // Unit test for strcpy.
 int main()
 {
-    char input[] = {"Testing123"};
-    char copy[256];
+    char    input[] = {"Testing123"};
+    char    copy[256];
 
     putstr_ion("Testing strcpy: ");
     strcpy_ion(copy, input);

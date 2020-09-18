@@ -3,8 +3,8 @@
 // This function counts how many characters are in a character array, then prints that many.
 void putstr_ion(char *input)
 {
-    int i;
-    char *walker;
+    int     i;
+    char    *walker;
 
     i = 0;
     walker = input;

@@ -3,7 +3,7 @@
 // Unit test for the atoi function in the libion library.
 int main()
 {
-    char str[] = {"1234"};
+    char    str[] = {"1234"};
     
     putstr_ion("Testing Atoi with ");
     putstr_ion(str);

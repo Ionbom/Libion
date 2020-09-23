@@ -23,5 +23,7 @@ char *strcpy_ion(char *dest, char *str);
 int atoi_ion(char *str);
 // This function takes an integer and outputs a string.
 char *itoa_ion(int i, char *str);
+// This function will print up to n fibonacci numbers.
+void fibonacci_ion(int n);
 
 #endif

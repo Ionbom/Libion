@@ -25,5 +25,7 @@ int atoi_ion(char *str);
 char *itoa_ion(int i, char *str);
 // This function will print up to n fibonacci numbers.
 void fibonacci_ion(int n);
+// This function will print up to n prime numbers.
+void prime_ion(int n);
 
 #endif

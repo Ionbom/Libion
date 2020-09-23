@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -Wextra -Werror
 INCLUDES=-I../include
-TARGET=fibonacci_test
+TARGET=
 
 SRCS=$(TARGET).c $(wildcard ../source/*.c)
 OBJS=$(SRCS:.c=.o)

@@ -6,7 +6,7 @@ int main()
     int     i;
     char    str[256];
 
-    i = -0;
+    i = 32;
     putstr_ion("Testing itoa_ion with ");
     putnbr_ion(i);
     putstr_ion(": ");

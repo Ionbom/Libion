@@ -27,5 +27,8 @@ char *itoa_ion(int i, char *str);
 void fibonacci_ion(int n);
 // This function will print up to n prime numbers.
 void prime_ion(int n);
+// This function takes a number and two delimiters, 
+// and returns a number within those limits.
+int range_ion(int value, int min, int max);
 
 #endif

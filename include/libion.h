@@ -36,5 +36,8 @@ void    prime_ion(int n);
 // This function takes a number and two delimiters, 
 // and returns a number within those limits.
 int     range_ion(int value, int min, int max);
+// This function will create a new linked list element,
+// and set the value of the "next" pointer to null.
+t_list  *new_elem_ion(void *data);
 
 #endif

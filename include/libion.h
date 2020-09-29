@@ -4,16 +4,21 @@
 #ifndef UNISTD_H
 #define UNISTS_H
 #include <unistd.h>
+#include <stdlib.h>
 #endif
 
+/* The t_list type contains a pointer to another t_list type
+/* And a void pointer. The data entered will only be a pointer to
+/* the actual data stored elsewhere. This does not allocate
+/* memory for the actual stored data. */
 typedef struct      s_list
 {
     struct s_list   *next;
     void            *data;
 }                   t_list;
 
-// Counts how many characters are in a character array, then prints them.
-void    putstr_ion(char *input);
+// Takes a pointer to the first character in a character array and prints the array.
+void    putstr_ion(char *str);
 // Outputs a single character.
 void    putchar_ion(char c);
 // Outputs an integer to the terminal.

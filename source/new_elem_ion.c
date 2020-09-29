@@ -13,5 +13,5 @@ t_list *new_elem_ion(void *data)
     }
     newElem->data = data;
     newElem->next = NULL;
-    return(newElem);
+    return newElem;
 }

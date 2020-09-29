@@ -8,9 +8,9 @@
 #endif
 
 /* The t_list type contains a pointer to another t_list type
-/* And a void pointer. The data entered will only be a pointer to
-/* the actual data stored elsewhere. This does not allocate
-/* memory for the actual stored data. */
+// And a void pointer. The data entered will only be a pointer to
+// the actual data stored elsewhere. This does not allocate
+// memory for the actual stored data. */
 typedef struct      s_list
 {
     struct s_list   *next;
@@ -44,5 +44,8 @@ int     range_ion(int value, int min, int max);
 // This function will create a new linked list element,
 // and set the value of the "next" pointer to null.
 t_list  *new_elem_ion(void *data);
+// This function will prepend a new element to an existing list.
+// Then return the new element (head) of said list.
+t_list  *prepend_elem(t_list *list, void *data);
 
 #endif

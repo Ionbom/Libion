@@ -8,5 +8,5 @@ int main()
 
     test = new_elem_ion(str);
     putstr_ion(test->data);
-    return(0);
+    return 0;
 }

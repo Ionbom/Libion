@@ -8,7 +8,7 @@ int main()
     char str2[] = {"This is another test string.\n"};
 
     list = new_elem_ion(str1);
-    list = prepend_elem(list, str2);
+    list = prepend_elem_ion(list, str2);
     putstr_ion(list->data);
     putstr_ion(list->next->data);
     return 0;

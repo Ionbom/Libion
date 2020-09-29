@@ -42,10 +42,13 @@ void    prime_ion(int n);
 // and returns a number within those limits.
 int     range_ion(int value, int min, int max);
 // This function will create a new linked list element,
-// and set the value of the "next" pointer to null.
+// set the value of the "next" pointer to null, and "data"to data.
 t_list  *new_elem_ion(void *data);
 // This function will prepend a new element to an existing list.
 // Then return the new element (head) of said list.
 t_list  *prepend_elem_ion(t_list *list, void *data);
+// This function will append a new element to the end of an
+// existing list and return said element.
+t_list  *append_elem_ion(t_list *list, void *data);
 
 #endif

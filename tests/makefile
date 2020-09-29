@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Wall -Wextra -Werror
 INCLUDES=-I../include
-TARGET=prepend_elem_test
+TARGET=append_elem_test
 
 SRCS=$(TARGET).c $(wildcard ../source/*.c)
 OBJS=$(SRCS:.c=.o)

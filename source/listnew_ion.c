@@ -3,7 +3,7 @@
 // This function will create a new linked list element,
 //and set the value of the "next" pointer to null.
 
-t_list *new_elem_ion(void *data)
+t_list *listnew_ion(void *data)
 {
     t_list *newElem = (t_list*)malloc(sizeof(t_list));
     if(newElem == NULL)

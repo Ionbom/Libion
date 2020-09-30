@@ -43,12 +43,15 @@ void    prime_ion(int n);
 int     range_ion(int value, int min, int max);
 // This function will create a new linked list element,
 // set the value of the "next" pointer to null, and "data"to data.
-t_list  *new_elem_ion(void *data);
+t_list  *listnew_ion(void *data);
 // This function will prepend a new element to an existing list.
 // Then return the new element (head) of said list.
-t_list  *prepend_elem_ion(t_list *list, void *data);
+t_list  *listprepend_ion(t_list *list, void *data);
 // This function will append a new element to the end of an
 // existing list and return said element.
-t_list  *append_elem_ion(t_list *list, void *data);
+t_list  *listappend_ion(t_list *list, void *data);
+// This function will return a count of the amount of elements
+// in a given linked list.
+int     listln_ion(t_list *list);
 
 #endif
